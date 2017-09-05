@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>一个Tooltips插件开发引起的思考</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .tip,.tip2 {
+            margin: 50px 50px 50px 100px;
+            top: 100px;
+            position: relative;
+            width: 100px;
+            /*background: #ddd;*/
+            border: 2px solid #00b3ee;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="tip-container">-->
+        <!--<div class="tip-point-bottom">-->
+            <!--<div class="tip-content">我爱慕课网</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="tip" data-tip="苟利国家生死以" data-mode="top" title="333">醉里挑灯看剑</div>
+    <div class="tip" data-tip="岂因福祸趋避之" data-mode="bottom" title="3333">听取蛙声一片</div>
+    <div class="tip2" data-tip="岂因福祸趋避之">听取蛙声一片</div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $('.tip').tip();
+        $('.tip2').tip();
+    </script>
+</body>
+</html>
